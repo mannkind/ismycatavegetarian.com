@@ -6,22 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <style type="text/css">
     body {
-      color: black;
-      background-color: white;
-      padding: 2rem;
+      color: #222;
+      background-color: #f8fafc;
+      font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s, color 0.3s;
     }
 
     #answer {
-      font-weight: bold;
-      font-size: 120pt;
-      margin-top: 200px;
+      font-weight: 700;
+      font-size: 10vw;
+      margin: 0;
       text-align: center;
+      letter-spacing: 0.04em;
+      color: #e53e3e;
+      line-height: 1.1;
+      user-select: none;
     }
-    
+
     @media (prefers-color-scheme: dark) {
       body {
-        background-color: black;
-        color: white;
+        background-color: #181a1b;
+        color: #f3f3f3;
+      }
+      #answer {
+        color: #f87171;
       }
     }
   </style>
